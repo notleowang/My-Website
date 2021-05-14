@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="535" height="350" viewBox="0 0 535 350">
+  <g id="Code" transform="translate(-731.684 -266)">
+    <text id="Shadow" transform="translate(746.684 328)" fill="rgba(0,0,0,0.51)" font-size="56" font-family="CourierNewPSMT, Courier New"><tspan x="0" y="0">while (!dead) {</tspan><tspan x="0" y="64" xml:space="preserve">       code();</tspan><tspan x="0" y="128" xml:space="preserve">       eat();</tspan><tspan x="0" y="192" xml:space="preserve">       //sleep;</tspan><tspan x="0" y="256">}</tspan></text>
+    <text id="Text" transform="translate(733.684 317)" fill="#fa9039" font-size="56" font-family="CourierNewPS-BoldMT, Courier New" font-weight="700"><tspan x="0" y="0">while</tspan><tspan y="0" xml:space="preserve" fill="#000"> (!dead) {</tspan><tspan fill="#000"><tspan x="0" y="64" xml:space="preserve">       code();</tspan><tspan x="0" y="128" xml:space="preserve">       eat();</tspan></tspan><tspan fill="#505050"><tspan x="0" y="192" xml:space="preserve">       </tspan><tspan y="192" fill="#6b6b6b">//sleep;</tspan></tspan><tspan fill="#000"><tspan x="0" y="256">}</tspan></tspan></text>
+  </g>
+</svg>

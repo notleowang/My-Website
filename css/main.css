@@ -1,0 +1,237 @@
+:root {
+  --background-color: white;
+  --orange-font-color: #FA9039;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: 'Montserrat';
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navigation-container {
+  background: var(--background-color);
+}
+
+header {
+  padding: 3em 7em;
+}
+
+header .logo {
+  font-size: 34px;
+  font-weight: bold;
+  color: black;
+}
+
+header .face {
+  margin-top: 9px;
+  margin-left: 10px;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul li {
+  display: block;
+  margin-top: 10px;
+  margin-left: 9em;
+  position: relative;
+}
+
+header nav ul a {
+  color: var(--orange-font-color);
+}
+
+header nav ul a:hover {
+  color: black;
+}
+
+header nav ul a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: var(--orange-font-color);
+  position: absolute;
+  width: 0%;
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
+}
+
+header nav ul a:hover::after {
+  width: 100%;
+}
+
+.hook {
+  background: var(--background-color);
+  margin-top: 7em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hook .hook-text {
+  margin: 0 auto;
+  text-align: left;
+}
+
+.hook .hook-text h1 {
+  font-size: 64px;
+}
+
+.hook .hook-text h2, .hook .hook-text ul {
+  font-weight: normal;
+  font-size: 34px;
+  color: #9E9E9E;
+}
+
+.hook .hook-img {
+  margin: 0 auto;
+  padding-top: 1em;
+}
+
+.about-arrow {
+  margin-top: 16em;
+  margin-bottom: 5em;
+}
+
+.about-arrow h2 {
+  margin: 0;
+  font-size: 15px;
+  text-align: center;
+  font-weight: normal;
+  color: var(--orange-font-color);
+}
+
+.about-arrow .arrow-img {
+  height: 15px;
+  display: block;
+  padding-top: 0.5em;
+  margin: 0 auto;
+}
+
+section:not(.about) {
+  padding: 4em 7em;
+  background-color: black;
+}
+
+.about {
+  background: var(--orange-font-color);
+}
+
+.about .curved-upper-upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: absolute;
+  background-color: white;
+}
+
+.about .curved-upper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about .curved-lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about .information {
+  padding-top: 0.5em;
+  padding-bottom: 5em;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about .information .about-student {
+  padding-left: 18em;
+}
+
+.about .information .about-programmer {
+  padding-right: 18em;
+}
+
+.about .information h1, .about .information p {
+  color: white;
+}
+
+.about .information h1 {
+  font-size: 40px;
+}
+
+.about .information p {
+  font-size: 23px;
+}
+
+.projects h1 {
+  margin-top: -2em;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+.projects h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.projects .projects-container ul {
+  padding: 2em 10em;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-grid-columns: 24em 24em 24em;
+      grid-template-columns: 24em 24em 24em;
+}
+
+.projects .projects-container ul .icon {
+  margin-top: 1.8em;
+  height: 200px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  padding: 2em 0;
+  background-color: var(--orange-font-color);
+  border-radius: 1em;
+}
+
+.projects li {
+  background: white;
+  border-radius: 1em;
+  padding: 1em 3em;
+  text-align: left;
+  font-size: 15px;
+}
+
+.projects .desc {
+  color: var(--orange-font-color);
+}
+/*# sourceMappingURL=main.css.map */

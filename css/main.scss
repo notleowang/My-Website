@@ -1,0 +1,232 @@
+:root {
+    // --background-color: rgb(255, 252, 247);
+    --background-color: white;
+    --orange-font-color: #FA9039;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navigation-container {
+    background: var(--background-color);
+}
+
+header {
+    padding: 3em 7em;
+
+    .logo {
+        font-size: 34px;
+        font-weight: bold;
+        color: black;
+    }
+
+    .face {
+        margin-top: 9px;
+        margin-left: 10px;
+    }
+
+    nav {
+        float: right;
+
+        ul {
+            display: flex;  
+
+            li {
+                display: block;
+                margin-top: 10px;
+                margin-left: 9em;
+                position: relative;
+            }
+            
+            a {
+                color: var(--orange-font-color);
+            }
+
+            a:hover {
+                color: black;
+            }
+
+            a::after {
+                content: "";
+                display: block;
+                height: 2px;
+                background-color: var(--orange-font-color);
+
+                position: absolute;
+                width: 0%;
+
+                transition: all ease-in-out 250ms;
+            }
+
+            a:hover::after {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.hook {
+    background: var(--background-color);
+    margin-top: 7em;
+    display: flex;
+
+    .hook-text {
+        margin: 0 auto;
+        text-align: left;
+
+        h1 {
+            font-size: 64px;
+        }
+
+        h2, ul {
+            font-weight: normal;
+            font-size: 34px;
+            color: #9E9E9E;
+        }
+    }
+
+    .hook-img {
+        margin: 0 auto;
+        padding-top: 1em;
+    }
+}
+
+.about-arrow {
+    margin-top: 16em;
+    margin-bottom: 5em;
+
+    h2 {
+        margin: 0;
+        font-size: 15px;
+        text-align: center;
+        font-weight: normal;
+        color: var(--orange-font-color);
+    }
+
+    .arrow-img {
+        height: 15px;
+        display: block;
+        padding-top: 0.5em;
+        margin: 0 auto;
+    }
+}
+
+section:not(.about) {
+    padding: 4em 7em;
+    background-color: black;
+}
+
+.about {
+    background: var(--orange-font-color);
+
+    .curved-upper-upper {
+        display: flex;
+        width: 100%;
+        position: absolute;
+        background-color: white;
+    }
+
+    .curved-upper {
+        position: relative;
+        display: flex;
+    }
+
+    .curved-lower {
+        display: flex;
+    }
+    
+    .information {
+        padding-top: 0.5em;   
+        padding-bottom: 5em;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+
+        .about-student {
+            padding-left: 18em;
+        }
+
+        .about-programmer {
+            padding-right: 18em;
+        }
+
+        h1, p {
+            color: white;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 23px;
+        }
+    }
+}
+
+.projects {
+    
+    h1 {
+        margin-top: -2em;
+        color: white;
+        text-align: center;
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+
+    .projects-container ul {
+        padding: 2em 10em;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 24em 24em 24em;
+
+        .icon {
+            margin-top: 1.8em;
+            height: 200px;
+            display: grid;
+            place-content: center;
+            padding: 2em 0;
+            background-color: var(--orange-font-color);
+            border-radius: 1em;
+
+            // &.one {
+            // }
+
+            // &.two {
+            // }
+            
+            // &.three {
+            // }
+        }
+    }
+
+    li {
+        background: white;
+        border-radius: 1em;
+        padding: 1em 3em;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .desc {
+        color: var(--orange-font-color);
+    }
+}
