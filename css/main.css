@@ -3,16 +3,19 @@
   --orange-font-color: #FA9039;
 }
 
-body {
-  height: 100vh;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: 'Montserrat';
 }
 
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 a {
@@ -20,6 +23,7 @@ a {
 }
 
 .navigation-container {
+  min-width: 1100px;
   background: var(--background-color);
 }
 
@@ -34,6 +38,7 @@ header .logo {
 }
 
 header .face {
+  height: 100%;
   margin-top: 9px;
   margin-left: 10px;
 }
@@ -80,19 +85,24 @@ header nav ul a:hover::after {
 
 .hook {
   background: var(--background-color);
-  margin-top: 7em;
+  margin-top: 9em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hook .hook-text {
   margin: 0 auto;
   text-align: left;
+  line-height: 60px;
 }
 
 .hook .hook-text h1 {
   font-size: 64px;
+  padding-bottom: 15px;
 }
 
 .hook .hook-text h2, .hook .hook-text ul {
@@ -101,38 +111,54 @@ header nav ul a:hover::after {
   color: #9E9E9E;
 }
 
+.hook .hook-text ul {
+  padding-left: 1em;
+}
+
 .hook .hook-img {
   margin: 0 auto;
   padding-top: 1em;
 }
 
 .about-arrow {
+  text-align: center;
+  width: 100%;
   margin-top: 16em;
   margin-bottom: 5em;
 }
 
-.about-arrow h2 {
-  margin: 0;
+.about-arrow a {
+  display: inline-block;
+  margin: 0 auto;
   font-size: 15px;
-  text-align: center;
   font-weight: normal;
   color: var(--orange-font-color);
 }
 
+.about-arrow a:hover {
+  color: black;
+}
+
 .about-arrow .arrow-img {
   height: 15px;
+  width: 10px;
   display: block;
   padding-top: 0.5em;
   margin: 0 auto;
 }
 
-section:not(.about) {
+.about-arrow .arrow-img:hover {
+  display: none;
+}
+
+section:not(.about, .contact, .github) {
   padding: 4em 7em;
   background-color: black;
 }
 
 .about {
   background: var(--orange-font-color);
+  scroll-behavior: smooth;
 }
 
 .about .curved-upper-upper {
@@ -167,6 +193,7 @@ section:not(.about) {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  line-height: 40px;
 }
 
 .about .information .about-student {
@@ -182,6 +209,8 @@ section:not(.about) {
 }
 
 .about .information h1 {
+  padding-top: 30px;
+  padding-bottom: 20px;
   font-size: 40px;
 }
 
@@ -196,9 +225,17 @@ section:not(.about) {
   font-size: 50px;
 }
 
+.projects h2 {
+  color: white;
+  padding-bottom: 1em;
+  font-weight: normal;
+  text-align: center;
+}
+
 .projects h3 {
   font-size: 25px;
   font-weight: 600;
+  padding: 20px 0;
 }
 
 .projects .projects-container ul {
@@ -214,7 +251,7 @@ section:not(.about) {
 
 .projects .projects-container ul .icon {
   margin-top: 1.8em;
-  height: 200px;
+  height: 250px;
   display: -ms-grid;
   display: grid;
   place-content: center;
@@ -223,15 +260,157 @@ section:not(.about) {
   border-radius: 1em;
 }
 
+.projects .projects-container ul .icon:hover {
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg);
+}
+
 .projects li {
   background: white;
   border-radius: 1em;
-  padding: 1em 3em;
+  padding: 0.3em 2em;
   text-align: left;
   font-size: 15px;
+  line-height: 24px;
+}
+
+.projects p {
+  padding-bottom: 20px;
 }
 
 .projects .desc {
   color: var(--orange-font-color);
+  padding-bottom: 20px;
+}
+
+.github .container {
+  margin-top: -50px;
+  padding: 1em 0;
+  background-color: #000;
+  text-align: center;
+}
+
+.github .curved-lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -15px;
+  background: black;
+  width: 100%;
+}
+
+.github a {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.github a:hover {
+  color: var(--orange-font-color);
+}
+
+.contact {
+  height: 700px;
+  z-index: 100;
+}
+
+.contact .form {
+  margin: 0 auto;
+  background-color: white;
+  height: 440px;
+  width: 400px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .form h2 {
+  color: white;
+  font-size: 45px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.contact .form p {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+.contact .form .card {
+  padding: 3em;
+  -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  background-color: var(--orange-font-color);
+  border-radius: 1em;
+  height: 100%;
+}
+
+.contact .form .form-control {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.contact .form input[type='text'], .contact .form input[type='email'] {
+  background-color: var(--orange-font-color);
+  border: 0;
+  border-bottom: 2px solid white;
+  width: 100%;
+  font-size: 16px;
+  padding: 4px 2px;
+  color: white;
+}
+
+.contact .form input[type='submit'] {
+  margin-top: 1em;
+  width: 100%;
+}
+
+.contact .form .btn {
+  margin-top: 0.5em;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: white;
+  border: none;
+  border-radius: 5px;
+  color: var(--orange-font-color);
+  font-weight: 600;
+}
+
+.contact .form .btn:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  background: #ebebeb;
+}
+
+.contact .form input::-webkit-input-placeholder {
+  color: white;
+}
+
+.contact .form input:-ms-input-placeholder {
+  color: white;
+}
+
+.contact .form input::-ms-input-placeholder {
+  color: white;
+}
+
+.contact .form input::placeholder {
+  color: white;
+}
+
+.contact .form input:focus {
+  outline: none;
+}
+
+footer {
+  background-color: #000;
+  height: 50px;
+}
+
+@media all and (max-width: 1470px) {
+  .hook-img {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
